@@ -10,7 +10,7 @@ The software is a simple Python program that prints messages to the console.
 The purpose of this software is to verify my Python setup and begin practicing
 basic programming concepts.
 
-[Software Demo Video](https://youtu.be/-----)
+[Software Demo Video](https://youtu.be/J5VrDxfr3BI)
 
 # Development Environment
 
