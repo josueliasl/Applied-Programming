@@ -1,26 +1,42 @@
-# Overview
+# Employee Management System
 
-As a software engineer, I created this project to practice setting up a Python
-development environment and writing a basic Python program. This project helped
-me confirm that my tools are working correctly and that I can successfully run
-Python code.
+## Overview
 
-The software is a simple Python program that prints messages to the console.
+As a software engineer, I created this comprehensive Employee Management System to practice database operations, CRUD functionality, and data analysis with Python and SQLite. This project demonstrates my ability to build functional database-driven applications with meaningful data analytics capabilities.
 
-The purpose of this software is to verify my Python setup and begin practicing
-basic programming concepts.
+The software is a full-featured employee directory application that stores, manages, and analyzes employee information including contact details, departments, and employment history. The system provides insights into workforce metrics and retention patterns.
 
-[Software Demo Video](https://youtu.be/J5VrDxfr3BI)
+**Key Features:**
+- Complete CRUD operations for employee records
+- SQLite database with proper schema design
+- Data analytics with SQL aggregate functions
+- Department statistics and workforce analysis
+- Employee tenure tracking and retention metrics
 
-# Development Environment
+https://youtu.be/IHJz29Kwiag
 
-This project was developed using Visual Studio Code on Windows with Python 3.
-A virtual environment was used to manage the Python interpreter.
+## Development Environment
 
-The programming language used for this project is Python.
+This project was developed using:
+- **Operating System**: Windows
+- **IDE**: Visual Studio Code
+- **Programming Language**: Python 3
+- **Database**: SQLite3
+- **Key Libraries**: datetime, dateutil.relativedelta
+- **Version Control**: Git with GitHub
 
-# Useful Websites
+## Database Design
 
-* [Python Documentation](https://docs.python.org/3/)
-* [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
+The application uses a single SQLite database with the following schema:
 
+```sql
+CREATE TABLE employees(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    full_name TEXT NOT NULL,
+    address TEXT NOT NULL,
+    phone_number TEXT NOT NULL,
+    email TEXT NOT NULL UNIQUE,
+    department TEXT,
+    entry_date DATE NOT NULL,
+    departure_date DATE
+)
